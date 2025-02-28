@@ -15,7 +15,7 @@ This project utilizes the [catholic-mass-readings](https://pypi.org/project/cath
 ### 1. Clone the Repository
 ```bash
 # Clone this repository
-git clone https://github.com/paulerrr/catholic-mass-readings-api.git
+git clone REPO URL
 cd catholic-mass-readings-api
 ```
 
