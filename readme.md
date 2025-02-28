@@ -12,7 +12,14 @@ This project utilizes the [catholic-mass-readings](https://pypi.org/project/cath
 
 ## Installation
 
-### Docker (Recommended)
+### 1. Clone the Repository
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/catholic-mass-readings-api.git
+cd catholic-mass-readings-api
+```
+
+### 2. Docker Setup (Recommended)
 ```bash
 # Copy the example configuration file
 cp docker-compose.example.yml docker-compose.yml
@@ -23,7 +30,7 @@ cp docker-compose.example.yml docker-compose.yml
 docker-compose up -d
 ```
 
-### Standard Installation
+### 3. Standard Installation
 ```bash
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
@@ -37,6 +44,8 @@ After installation, the API will be available at `http://localhost:8000`
 - `http://localhost:8000/docs` - Interactive documentation
 
 ## Implementation Example
+
+This Python script retrieves a specific date's readings, displays the liturgical season and title, and then shows each reading with its source and content.
 
 ```python
 import requests
@@ -69,3 +78,5 @@ def get_todays_readings():
 if __name__ == "__main__":
     get_todays_readings()
 ```
+
+This script requires the `requests` library (`pip install requests`).
