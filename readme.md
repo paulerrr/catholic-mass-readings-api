@@ -14,6 +14,12 @@ This project utilizes the [catholic-mass-readings](https://pypi.org/project/cath
 
 ### Docker (Recommended)
 ```bash
+# Copy the example configuration file
+cp docker-compose.example.yml docker-compose.yml
+
+# Edit docker-compose.yml to customize if needed
+
+# Start the container
 docker-compose up -d
 ```
 
